@@ -15,7 +15,7 @@ public class PlataformaController {
     @Autowired
     private PlataformaRepository plataformaRepo;
 
-    @PostMapping
+    @PostMapping 
     public Plataforma insert(@RequestBody Plataforma plataforma) {
         return plataformaRepo.save(plataforma);
     }
